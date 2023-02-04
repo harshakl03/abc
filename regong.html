@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="regong.css">
+</head>
+
+<body>
+    <nav class="navbar">
+       
+        <div class="inner-div">  <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="regong.html">About</a></li>
+            <li><a href="redux.html">Contact</a></li>
+         
+        </ul>
+        
+
+</div>
+<button type="submit" class="button-1">Dark Theme</button>
+      
+    </nav>
+   <div id="animation">
+    <center><h1>
+        Hello my name is Akash
+    </h1></center>
+    <center></center>
+   
+    
+ </div>
+ <div >
+    <center ><h2 id="change-text">
+        I am a web developer
+    </h1></center>
+ </div>
+    <div class="image-1">
+        <img class="set-img" src="./5dc3950c-71ce-4c6b-bc7b-c21d18bf6d14.jpg" alt="" srcset="">
+    </div>
+    <p  id="change-beta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum alias, adipisci aperiam numquam, laborum laudantium quasi eos, perspiciatis minus voluptate nostrum reiciendis iusto aut quibusdam omnis neque? Reprehenderit nostrum dolores temporibus vel labore ducimus ipsam, placeat possimus dolor quidem, fuga aliquid? Adipisci harum quidem minus ducimus quae asperiores porro quasi repudiandae? Quas numquam asperiores ab sequi alias voluptatibus debitis rem nulla doloribus ut tempora quos hic fuga voluptas dolore possimus laudantium consequuntur optio, quam facere. Natus sequi quae nobis possimus incidunt harum adipisci a at, alias modi repudiandae blanditiis expedita autem sunt suscipit cupiditate iure! Tempore placeat molestias ea!</p>
+   <center><h2>Technologies That I know</h2></center>
+   <center>  <img src="./download.png" alt="" class="serr"></center>
+
+
+    <footer>
+        <div class="finale">All copyrights reserved</div>
+    </footer>
+    
+</body>
+<script>
+
+
+
+    let btn=document.querySelector('button');
+    let wadu=document.getElementById('change-text');
+    let hex=document.getElementById('change-beta');
+    btn.addEventListener('click',()=>{
+        if (!document.body.style.backgroundColor &&
+        !wadu.style.color ){
+        document.body.style.backgroundColor="rgb(42, 49, 66)"
+     
+        wadu.style.color="white"
+        hex.style.color="gray"
+    }else{
+        document.body.style.backgroundColor=null
+        wadu.style.color=null
+    }
+    })
+    let change=true
+    setInterval(()=>{
+        
+        change===true?document.title="hello":document.title="noo"
+        // if (change===true){
+        //     document.title="hello world"
+        // }else{
+        //     document.title="bye bye"
+        // }
+        change=!change
+    },1000)
+   
+</script>
+</html>
